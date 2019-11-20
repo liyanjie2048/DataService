@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Microsoft.Extensions.DependencyInjection;
+
 namespace Liyanjie.Modularization.AspNetCore
 {
     /// <summary>
@@ -22,8 +24,18 @@ namespace Liyanjie.Modularization.AspNetCore
             string findRouteTemplate = "AD/Find",
             Action<AdministrativeDivisionModuleOptions> configureOptions = null)
         {
-            moduleTable.AddModule("AdministrativeDivisionModule", new ModularizationModuleMiddleware[]
+            moduleTable.Services.AddSingleton<AdministrativeDivisionFindMiddleware>();
+            moduleTable.Services.AddSingleton<AdministrativeDivisionGetMiddleware>();
+            moduleTable.Services.AddSingleton<AdministrativeDivisionGetChildrenMiddleware>();
+
+            moduleTable.AddModule("AdministrativeDivisionModule", new[]
             {
+                new ModularizationModuleMiddleware
+                {
+                    HttpMethods = new[] { "GET" },
+                    RouteTemplate = findRouteTemplate,
+                    HandlerType = typeof(AdministrativeDivisionFindMiddleware),
+                },
                 new ModularizationModuleMiddleware
                 {
                     HttpMethods = new[] { "GET" },
@@ -34,13 +46,7 @@ namespace Liyanjie.Modularization.AspNetCore
                 {
                     HttpMethods = new[] { "GET" },
                     RouteTemplate = getChildrenRouteTemplate,
-                    HandlerType = typeof(AdministrativeDivisionGetMiddleware),
-                },
-                new ModularizationModuleMiddleware
-                {
-                    HttpMethods = new[] { "GET" },
-                    RouteTemplate = findRouteTemplate,
-                    HandlerType = typeof(AdministrativeDivisionGetMiddleware),
+                    HandlerType = typeof(AdministrativeDivisionGetChildrenMiddleware),
                 },
             }, configureOptions);
 

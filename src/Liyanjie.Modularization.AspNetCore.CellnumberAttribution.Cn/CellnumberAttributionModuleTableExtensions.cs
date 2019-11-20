@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Microsoft.Extensions.DependencyInjection;
+
 namespace Liyanjie.Modularization.AspNetCore
 {
     /// <summary>
@@ -18,6 +20,8 @@ namespace Liyanjie.Modularization.AspNetCore
             string routeTemplate = "CA/Find",
             Action<CellnumberAttributionModuleOptions> configureOptions = null)
         {
+            moduleTable.Services.AddSingleton<CellnumberAttributionMiddleware>();
+
             moduleTable.AddModule("CellnumberAttributionModule", new[]
             {
                 new ModularizationModuleMiddleware{
