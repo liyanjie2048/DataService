@@ -21,7 +21,7 @@ namespace Liyanjie.DataServices
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="options"></param>
+        /// <param name="dataSet"></param>
         public AdministrativeDivisionCnService(IQueryable<AdministrativeDivisionCn> dataSet)
         {
             this.dataSet = dataSet;
@@ -37,36 +37,43 @@ namespace Liyanjie.DataServices
             if (level > Level.Village)
                 level = Level.County;
 
-            return level > 0 ? GetChildren(0L, Level.Province).Select(province => new AdministrativeDivisionCn
+            if (level > 0)
             {
-                Code = province.Code,
-                Level = province.Level,
-                Display = province.Display,
-                Children = level > Level.Province ? GetChildren(province.Code, Level.City).Select(city => new AdministrativeDivisionCn
+                var data = dataSet.Where(_ => _.Level <= (int)level).ToList();
+
+                return _GetChildren(data, 0L, Level.Province).Select(province => new AdministrativeDivisionCn
                 {
-                    Code = city.Code,
-                    Level = city.Level,
-                    Display = city.Display,
-                    Children = level > Level.City ? GetChildren(city.Code, Level.County).Select(county => new AdministrativeDivisionCn
+                    Code = province.Code,
+                    Level = province.Level,
+                    Display = province.Display,
+                    Children = level > Level.Province ? _GetChildren(data, province.Code, Level.City).Select(city => new AdministrativeDivisionCn
                     {
-                        Code = county.Code,
-                        Level = county.Level,
-                        Display = county.Display,
-                        Children = level > Level.County ? GetChildren(county.Code, Level.Town).Select(town => new AdministrativeDivisionCn
+                        Code = city.Code,
+                        Level = city.Level,
+                        Display = city.Display,
+                        Children = level > Level.City ? _GetChildren(data, city.Code, Level.County).Select(county => new AdministrativeDivisionCn
                         {
-                            Code = town.Code,
-                            Level = town.Level,
-                            Display = town.Display,
-                            Children = level > Level.Town ? GetChildren(town.Code, Level.Village).Select(village => new AdministrativeDivisionCn
+                            Code = county.Code,
+                            Level = county.Level,
+                            Display = county.Display,
+                            Children = level > Level.County ? _GetChildren(data, county.Code, Level.Town).Select(town => new AdministrativeDivisionCn
                             {
-                                Code = village.Code,
-                                Level = village.Level,
-                                Display = village.Display,
+                                Code = town.Code,
+                                Level = town.Level,
+                                Display = town.Display,
+                                Children = level > Level.Town ? _GetChildren(data, town.Code, Level.Village).Select(village => new AdministrativeDivisionCn
+                                {
+                                    Code = village.Code,
+                                    Level = village.Level,
+                                    Display = village.Display,
+                                }) : null,
                             }) : null,
                         }) : null,
                     }) : null,
-                }) : null,
-            }) : null;
+                });
+            }
+            else
+                return new AdministrativeDivisionCn[0];
         }
 
         /// <summary>
@@ -77,9 +84,14 @@ namespace Liyanjie.DataServices
         /// <returns></returns>
         public IEnumerable<AdministrativeDivisionCn> GetChildren(long code, Level level)
         {
+            return _GetChildren(dataSet, code, level);
+        }
+        static IEnumerable<AdministrativeDivisionCn> _GetChildren(IEnumerable<AdministrativeDivisionCn> data, long code, Level level)
+        {
             if (level == Level.Province)
-                return dataSet
+                return data
                     .Where(_ => _.Level == 1)
+                    .OrderBy(_ => _.Code)
                     .ToList();
 
             var _base = level switch
@@ -92,7 +104,7 @@ namespace Liyanjie.DataServices
             };
 
             code = code / _base * _base;
-            return dataSet
+            return data
                 .Where(_ => _.Level == (int)level && _.Code > code && _.Code < code + _base)
                 .OrderBy(_ => _.Code)
                 .ToList();
