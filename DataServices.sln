@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B69FF1DD-3539-40A1-B511-4AC859DBB45F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{614D907A-C22E-48BD-9074-15E8D30251AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.AdministrativeDivision.Cn", "src\Liyanjie.DataServices.AdministrativeDivision.Cn\Liyanjie.DataServices.AdministrativeDivision.Cn.csproj", "{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.CellnumberAttribution.Cn", "src\Liyanjie.DataServices.CellnumberAttribution.Cn\Liyanjie.DataServices.CellnumberAttribution.Cn.csproj", "{992688E2-9C15-47BD-AAF5-3B2780F51C49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.Sample.AspNetCore", "sample\Liyanjie.DataServices.Sample.AspNetCore\Liyanjie.DataServices.Sample.AspNetCore.csproj", "{5BB8C844-2087-462B-86D4-C885EDB28BAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn.csproj", "{DFA0F448-5DF3-411E-9C09-867C9187CD8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn", "src\Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn\Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn.csproj", "{68620832-2781-49A5-9E65-8406AA2BB9BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liyanjie.Modularization.AspNetCore.IPAddress.Cn", "src\Liyanjie.Modularization.AspNetCore.IPAddress.Cn\Liyanjie.Modularization.AspNetCore.IPAddress.Cn.csproj", "{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.IPAddress.Cn", "src\Liyanjie.DataServices.IPAddress.Cn\Liyanjie.DataServices.IPAddress.Cn.csproj", "{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn.csproj", "{51871D80-9578-4C14-AB20-138F8CBFA196}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn", "src\Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn\Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn.csproj", "{426C36F2-DFEB-42C8-A569-2565E3C1373C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.IPAddress.Cn", "src\Liyanjie.Modularization.AspNet.IPAddress.Cn\Liyanjie.Modularization.AspNet.IPAddress.Cn.csproj", "{D70355E8-021F-4F3B-9256-A512E870F4F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68620832-2781-49A5-9E65-8406AA2BB9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68620832-2781-49A5-9E65-8406AA2BB9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68620832-2781-49A5-9E65-8406AA2BB9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68620832-2781-49A5-9E65-8406AA2BB9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51871D80-9578-4C14-AB20-138F8CBFA196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51871D80-9578-4C14-AB20-138F8CBFA196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51871D80-9578-4C14-AB20-138F8CBFA196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51871D80-9578-4C14-AB20-138F8CBFA196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{992688E2-9C15-47BD-AAF5-3B2780F51C49} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{5BB8C844-2087-462B-86D4-C885EDB28BAD} = {614D907A-C22E-48BD-9074-15E8D30251AB}
+		{DFA0F448-5DF3-411E-9C09-867C9187CD8E} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{68620832-2781-49A5-9E65-8406AA2BB9BF} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{51871D80-9578-4C14-AB20-138F8CBFA196} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{426C36F2-DFEB-42C8-A569-2565E3C1373C} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{D70355E8-021F-4F3B-9256-A512E870F4F1} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5F10E2C-FC0C-42E3-A0CF-A4EBD33F4642}
+	EndGlobalSection
+EndGlobal

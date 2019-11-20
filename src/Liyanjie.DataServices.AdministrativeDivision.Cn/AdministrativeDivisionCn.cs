@@ -1,0 +1,27 @@
+﻿using System.Collections.Generic;
+
+namespace Liyanjie.DataServices
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public class AdministrativeDivisionCn
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public long Code { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Display { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Level { get; set; }
+
+        public IEnumerable<AdministrativeDivisionCn> Children { get; set; }
+    }
+}

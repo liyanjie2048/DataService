@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;netstandard1.0;</TargetFrameworks>
+        <Description>数据服务（行政区划）</Description>
+        <Copyright>© Liyanjie.me</Copyright>
+        <Authors>liyanjie8712@outlook.com</Authors>
+        <Company>Liyanjie.me</Company>
+        <RepositoryUrl>https://github.com/liyanjie8712/DataServices</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/liyanjie8712/DataServices</PackageProjectUrl>
+        <RepositoryType>Git</RepositoryType>
+        <RootNamespace>Liyanjie.DataServices</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+        <DocumentationFile>bin\Release\net45\Liyanjie.DataServices.AdministrativeDivision.Cn.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard1.0|AnyCPU'">
+        <DocumentationFile>bin\Release\netstandard1.0\Liyanjie.DataServices.AdministrativeDivision.Cn.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <Target Name="MovePackage" AfterTargets="Pack">
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\_NugetPackages\" />
+    </Target>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>

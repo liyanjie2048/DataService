@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFrameworks>net45;</TargetFrameworks>
+      <Description>Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn</Description>
+      <Copyright>© Liyanjie.me</Copyright>
+      <Authors>liyanjie8712@outlook.com</Authors>
+      <Company>Liyanjie.me</Company>
+      <RepositoryUrl>https://github.com/liyanjie8712/DataServices</RepositoryUrl>
+      <PackageProjectUrl>https://github.com/liyanjie8712/DataServices</PackageProjectUrl>
+      <RepositoryType>Git</RepositoryType>
+      <RootNamespace>Liyanjie.Modularization.AspNet</RootNamespace>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Liyanjie.DataServices.CellnumberAttribution.Cn\Liyanjie.DataServices.CellnumberAttribution.Cn.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+        <DocumentationFile>bin\Release\net45\Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <Target Name="MovePackage" AfterTargets="Pack">
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\_NugetPackages\" />
+    </Target>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+        <PackageReference Include="Liyanjie.Modularization.AspNet" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+        <Reference Include="System.Web" />
+    </ItemGroup>
+
+</Project>
