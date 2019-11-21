@@ -13,12 +13,12 @@ namespace Liyanjie.Modularization.AspNetCore
         /// 
         /// </summary>
         /// <param name="moduleTable"></param>
-        /// <param name="routeTemplate"></param>
         /// <param name="configureOptions"></param>
+        /// <param name="routeTemplate"></param>
         /// <returns></returns>
         public static ModularizationModuleTable AddCellnumberAttributionCn(this ModularizationModuleTable moduleTable,
-            string routeTemplate = "CA/Find",
-            Action<CellnumberAttributionModuleOptions> configureOptions = null)
+            Action<CellnumberAttributionModuleOptions> configureOptions,
+            string routeTemplate = "CA/Find")
         {
             moduleTable.Services.AddSingleton<CellnumberAttributionMiddleware>();
 

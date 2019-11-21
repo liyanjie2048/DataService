@@ -11,12 +11,12 @@ namespace Liyanjie.Modularization.AspNet
         /// 
         /// </summary>
         /// <param name="moduleTable"></param>
-        /// <param name="routeTemplate"></param>
         /// <param name="configureOptions"></param>
+        /// <param name="routeTemplate"></param>
         /// <returns></returns>
         public static ModularizationModuleTable AddCellnumberAttributionCn(this ModularizationModuleTable moduleTable,
-            string routeTemplate = "IP/Find",
-            Action<IPAddressModuleOptions> configureOptions = null)
+            Action<IPAddressModuleOptions> configureOptions,
+            string routeTemplate = "IP/Find")
         {
             moduleTable.RegisterServiceType?.Invoke(typeof(IPAddressMiddleware), "Singleton");
 
