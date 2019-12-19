@@ -16,8 +16,8 @@
         <ProjectReference Include="..\Liyanjie.DataServices.IPAddress.Cn\Liyanjie.DataServices.IPAddress.Cn.csproj" />
     </ItemGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
-        <DocumentationFile>bin\Release\net45\Liyanjie.Modularization.AspNet.IPAddress.Cn.xml</DocumentationFile>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DocumentationFile>bin\Release\Liyanjie.Modularization.AspNet.IPAddress.Cn.xml</DocumentationFile>
     </PropertyGroup>
 
     <Target Name="MovePackage" AfterTargets="Pack">

@@ -16,8 +16,8 @@
       <ProjectReference Include="..\Liyanjie.DataServices.AdministrativeDivision.Cn\Liyanjie.DataServices.AdministrativeDivision.Cn.csproj" />
     </ItemGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
-        <DocumentationFile>bin\Release\net45\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn.xml</DocumentationFile>
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DocumentationFile>bin\Release\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn.xml</DocumentationFile>
     </PropertyGroup>
 
     <Target Name="MovePackage" AfterTargets="Pack">
