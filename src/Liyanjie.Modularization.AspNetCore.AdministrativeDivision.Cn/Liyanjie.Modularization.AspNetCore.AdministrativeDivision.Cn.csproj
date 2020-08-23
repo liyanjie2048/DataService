@@ -26,6 +26,7 @@
 
     <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
         <PackageReference Include="Liyanjie.Modularization.AspNetCore" Version="1.0.0" />
+        <PackageReference Include="System.Text.Json" Version="4.6.0" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.0'">

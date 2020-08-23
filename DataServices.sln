@@ -11,13 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.Admin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.CellnumberAttribution.Cn", "src\Liyanjie.DataServices.CellnumberAttribution.Cn\Liyanjie.DataServices.CellnumberAttribution.Cn.csproj", "{992688E2-9C15-47BD-AAF5-3B2780F51C49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.Sample.AspNetCore", "sample\Liyanjie.DataServices.Sample.AspNetCore\Liyanjie.DataServices.Sample.AspNetCore.csproj", "{5BB8C844-2087-462B-86D4-C885EDB28BAD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn.csproj", "{DFA0F448-5DF3-411E-9C09-867C9187CD8E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn", "src\Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn\Liyanjie.Modularization.AspNetCore.CellnumberAttribution.Cn.csproj", "{68620832-2781-49A5-9E65-8406AA2BB9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liyanjie.Modularization.AspNetCore.IPAddress.Cn", "src\Liyanjie.Modularization.AspNetCore.IPAddress.Cn\Liyanjie.Modularization.AspNetCore.IPAddress.Cn.csproj", "{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.IPAddress.Cn", "src\Liyanjie.Modularization.AspNetCore.IPAddress.Cn\Liyanjie.Modularization.AspNetCore.IPAddress.Cn.csproj", "{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.IPAddress.Cn", "src\Liyanjie.DataServices.IPAddress.Cn\Liyanjie.DataServices.IPAddress.Cn.csproj", "{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}"
 EndProject
@@ -41,10 +39,6 @@ Global
 		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{992688E2-9C15-47BD-AAF5-3B2780F51C49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BB8C844-2087-462B-86D4-C885EDB28BAD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA0F448-5DF3-411E-9C09-867C9187CD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,7 +74,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{992688E2-9C15-47BD-AAF5-3B2780F51C49} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
-		{5BB8C844-2087-462B-86D4-C885EDB28BAD} = {614D907A-C22E-48BD-9074-15E8D30251AB}
 		{DFA0F448-5DF3-411E-9C09-867C9187CD8E} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{68620832-2781-49A5-9E65-8406AA2BB9BF} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}

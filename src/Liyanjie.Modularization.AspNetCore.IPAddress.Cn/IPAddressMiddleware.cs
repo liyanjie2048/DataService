@@ -19,6 +19,7 @@ namespace Liyanjie.Modularization.AspNetCore
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="service"></param>
         /// <param name="options"></param>
         public IPAddressMiddleware(
             IPAddressCnService service,
@@ -28,6 +29,12 @@ namespace Liyanjie.Modularization.AspNetCore
             this.options = options.Value;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="next"></param>
+        /// <returns></returns>
         public async Task InvokeAsync(HttpContext context, RequestDelegate next) {
             if (context.Request.Query.TryGetValue("ip", out var ip)&&!string.IsNullOrEmpty(ip))
             {

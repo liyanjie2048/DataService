@@ -17,6 +17,7 @@ namespace Liyanjie.Modularization.AspNet
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="service"></param>
         /// <param name="options"></param>
         public IPAddressMiddleware(
             IPAddressCnService service,
@@ -29,7 +30,7 @@ namespace Liyanjie.Modularization.AspNet
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="response"></param>
+        /// <param name="httpContext"></param>
         public async Task HandleAsync(HttpContext httpContext)
         {
             var ip = httpContext.Request.QueryString["ip"];

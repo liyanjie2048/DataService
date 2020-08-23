@@ -10,6 +10,18 @@ namespace Liyanjie.Modularization.AspNetCore
     /// </summary>
     public class AdministrativeDivisionModuleOptions
     {
-        public Func<HttpResponse, object, Task> SerializeToResponseAsync;
+        /// <summary>
+        /// 
+        /// </summary>
+        public Func<HttpResponse, object, Task> SerializeToResponseAsync { get; set; }
+            = async (response, obj) =>
+            {
+                response.Clear();
+                response.ContentType = "application/json";
+                await response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(obj));
+#if NETCOREAPP3_0
+                await response.CompleteAsync();
+#endif
+            };
     }
 }

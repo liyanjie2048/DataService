@@ -1,5 +1,8 @@
 ﻿namespace Liyanjie.DataServices
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum AdministrativeDivisionCnLevel : uint
     {
         /// <summary>

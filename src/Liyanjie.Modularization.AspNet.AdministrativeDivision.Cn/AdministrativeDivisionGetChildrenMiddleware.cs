@@ -29,6 +29,11 @@ namespace Liyanjie.Modularization.AspNet
             this.options = options.Value;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public async Task InvokeAsync(HttpContext context)
         {
             var query = context.Request.QueryString;

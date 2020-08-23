@@ -3,15 +3,27 @@ using System.Linq;
 
 namespace Liyanjie.DataServices
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class IPAddressCnService
     {
         readonly IQueryable<IPAddressCn> dataSet;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dataSet"></param>
         public IPAddressCnService(IQueryable<IPAddressCn> dataSet)
         {
             this.dataSet = dataSet;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ip"></param>
+        /// <returns></returns>
         public string[] Find(string ip)
         {
             var @long = GetLong(ip);

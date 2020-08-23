@@ -22,6 +22,9 @@ namespace Liyanjie.DataServices
         /// </summary>
         public int Level { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public IEnumerable<AdministrativeDivisionCn> Children { get; set; }
     }
 }

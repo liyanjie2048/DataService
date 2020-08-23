@@ -9,6 +9,18 @@ namespace Liyanjie.Modularization.AspNet
     /// </summary>
     public class CellnumberAttributionModuleOptions
     {
-        public Func<HttpResponse, object, Task> SerializeToResponseAsync;
+        /// <summary>
+        /// 
+        /// </summary>
+        public Func<HttpResponse, object, Task> SerializeToResponseAsync { get; set; }
+            = async (response, obj) =>
+            {
+                await Task.FromResult(0);
+
+                response.Clear();
+                response.ContentType = "application/json";
+                response.Write(Newtonsoft.Json.JsonConvert.SerializeObject(obj));
+                response.End();
+            };
     }
 }
