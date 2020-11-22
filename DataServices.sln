@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.Asp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.IPAddress.Cn", "src\Liyanjie.Modularization.AspNet.IPAddress.Cn\Liyanjie.Modularization.AspNet.IPAddress.Cn.csproj", "{D70355E8-021F-4F3B-9256-A512E870F4F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78015A44-AED5-4C09-9BE5-2B7CE568912E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{C94F51D5-5B65-410E-8206-23C69ECDDEE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +89,7 @@ Global
 		{51871D80-9578-4C14-AB20-138F8CBFA196} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{426C36F2-DFEB-42C8-A569-2565E3C1373C} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{D70355E8-021F-4F3B-9256-A512E870F4F1} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
+		{C94F51D5-5B65-410E-8206-23C69ECDDEE6} = {78015A44-AED5-4C09-9BE5-2B7CE568912E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5F10E2C-FC0C-42E3-A0CF-A4EBD33F4642}
