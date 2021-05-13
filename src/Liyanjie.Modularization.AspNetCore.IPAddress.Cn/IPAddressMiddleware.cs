@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using Liyanjie.DataServices;
+using Liyanjie.DataService;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;

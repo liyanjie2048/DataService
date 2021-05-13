@@ -1,4 +1,4 @@
-﻿namespace Liyanjie.DataServices
+﻿namespace Liyanjie.DataService
 {
     /// <summary>
     /// 

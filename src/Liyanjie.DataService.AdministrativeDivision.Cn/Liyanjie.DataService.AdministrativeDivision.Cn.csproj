@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net45;netstandard1.0;</TargetFrameworks>
-        <Description>数据服务（IP地址）</Description>
+        <TargetFrameworks>net45;netstandard2.1;</TargetFrameworks>
+        <Description>数据服务（行政区划）</Description>
         <Copyright>© Liyanjie.net</Copyright>
         <Authors>liyanjie8712@outlook.com</Authors>
         <Company>Liyanjie.net</Company>
@@ -13,16 +13,11 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Release'">
-        <DocumentationFile>bin\Release\Liyanjie.DataServices.IPAddress.Cn.xml</DocumentationFile>
+        <DocumentationFile>bin\Release\Liyanjie.DataServices.AdministrativeDivision.Cn.xml</DocumentationFile>
     </PropertyGroup>
 
     <Target Name="MovePackage" AfterTargets="Pack">
-        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\_NugetPackages\" />
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\_NugetPackages\" />
     </Target>
-
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.0" />
-    </ItemGroup>
 
 </Project>

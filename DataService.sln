@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B69FF1DD-353
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{614D907A-C22E-48BD-9074-15E8D30251AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.AdministrativeDivision.Cn", "src\Liyanjie.DataServices.AdministrativeDivision.Cn\Liyanjie.DataServices.AdministrativeDivision.Cn.csproj", "{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataService.AdministrativeDivision.Cn", "src\Liyanjie.DataService.AdministrativeDivision.Cn\Liyanjie.DataService.AdministrativeDivision.Cn.csproj", "{4E40F0A0-AF72-4A61-B2A1-B39B60C9C482}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.CellnumberAttribution.Cn", "src\Liyanjie.DataServices.CellnumberAttribution.Cn\Liyanjie.DataServices.CellnumberAttribution.Cn.csproj", "{992688E2-9C15-47BD-AAF5-3B2780F51C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataService.CellnumberAttribution.Cn", "src\Liyanjie.DataService.CellnumberAttribution.Cn\Liyanjie.DataService.CellnumberAttribution.Cn.csproj", "{992688E2-9C15-47BD-AAF5-3B2780F51C49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn.csproj", "{DFA0F448-5DF3-411E-9C09-867C9187CD8E}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.Asp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNetCore.IPAddress.Cn", "src\Liyanjie.Modularization.AspNetCore.IPAddress.Cn\Liyanjie.Modularization.AspNetCore.IPAddress.Cn.csproj", "{939ED3B7-CBEE-4534-A9D2-B2CBD8659674}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataServices.IPAddress.Cn", "src\Liyanjie.DataServices.IPAddress.Cn\Liyanjie.DataServices.IPAddress.Cn.csproj", "{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataService.IPAddress.Cn", "src\Liyanjie.DataService.IPAddress.Cn\Liyanjie.DataService.IPAddress.Cn.csproj", "{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn.csproj", "{51871D80-9578-4C14-AB20-138F8CBFA196}"
 EndProject
@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.Asp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78015A44-AED5-4C09-9BE5-2B7CE568912E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{C94F51D5-5B65-410E-8206-23C69ECDDEE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{C94F51D5-5B65-410E-8206-23C69ECDDEE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

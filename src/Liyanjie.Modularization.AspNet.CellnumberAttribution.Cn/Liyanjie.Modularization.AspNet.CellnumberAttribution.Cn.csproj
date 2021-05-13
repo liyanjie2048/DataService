@@ -6,14 +6,14 @@
       <Copyright>© Liyanjie.net</Copyright>
       <Authors>liyanjie8712@outlook.com</Authors>
       <Company>Liyanjie.net</Company>
-      <RepositoryUrl>https://github.com/liyanjie8712/DataServices</RepositoryUrl>
-      <PackageProjectUrl>https://github.com/liyanjie8712/DataServices</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/liyanjie8712/DataService</RepositoryUrl>
+      <PackageProjectUrl>https://github.com/liyanjie8712/DataService</PackageProjectUrl>
       <RepositoryType>Git</RepositoryType>
       <RootNamespace>Liyanjie.Modularization.AspNet</RootNamespace>
   </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Liyanjie.DataServices.CellnumberAttribution.Cn\Liyanjie.DataServices.CellnumberAttribution.Cn.csproj" />
+        <ProjectReference Include="..\Liyanjie.DataService.CellnumberAttribution.Cn\Liyanjie.DataService.CellnumberAttribution.Cn.csproj" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -21,10 +21,10 @@
     </PropertyGroup>
 
     <Target Name="MovePackage" AfterTargets="Pack">
-        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\_NugetPackages\" />
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\_NugetPackages\" />
     </Target>
 
-    <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+    <ItemGroup>
         <PackageReference Include="Liyanjie.Modularization.AspNet" Version="1.0.0" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
         <Reference Include="System.Web" />

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Level = Liyanjie.DataServices.AdministrativeDivisionCnLevel;
+using Level = Liyanjie.DataService.AdministrativeDivisionCnLevel;
 
-namespace Liyanjie.DataServices
+namespace Liyanjie.DataService
 {
     /// <summary>
     /// 

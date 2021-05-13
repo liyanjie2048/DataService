@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netcoreapp3.0;</TargetFrameworks>
+        <TargetFrameworks>net5.0;</TargetFrameworks>
         <Description>Liyanjie.Modularization.AspNetCore.AdministrativeDivision.Cn</Description>
         <Copyright>© Liyanjie.net</Copyright>
         <Authors>liyanjie8712@outlook.com</Authors>
         <Company>Liyanjie.net</Company>
-        <RepositoryUrl>https://github.com/liyanjie8712/DataServices</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/liyanjie8712/DataServices</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/liyanjie8712/DataService</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/liyanjie8712/DataService</PackageProjectUrl>
         <RepositoryType>Git</RepositoryType>
         <RootNamespace>Liyanjie.Modularization.AspNetCore</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Liyanjie.DataServices.AdministrativeDivision.Cn\Liyanjie.DataServices.AdministrativeDivision.Cn.csproj" />
+      <ProjectReference Include="..\Liyanjie.DataService.AdministrativeDivision.Cn\Liyanjie.DataService.AdministrativeDivision.Cn.csproj" />
     </ItemGroup>
 
     <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -21,15 +21,10 @@
     </PropertyGroup>
 
     <Target Name="MovePackage" AfterTargets="Pack">
-        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\_NugetPackages\" />
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\_NugetPackages\" />
     </Target>
 
-    <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
-        <PackageReference Include="Liyanjie.Modularization.AspNetCore" Version="1.0.0" />
-        <PackageReference Include="System.Text.Json" Version="4.6.0" />
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.0'">
+    <ItemGroup>
         <PackageReference Include="Liyanjie.Modularization.AspNetCore" Version="1.0.0" />
     </ItemGroup>
 

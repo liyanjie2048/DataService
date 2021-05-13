@@ -2,9 +2,7 @@
 using System.Threading.Tasks;
 using System.Web;
 
-using Liyanjie.DataServices;
-
-using Microsoft.Extensions.Options;
+using Liyanjie.DataService;
 
 namespace Liyanjie.Modularization.AspNet
 {
@@ -23,10 +21,10 @@ namespace Liyanjie.Modularization.AspNet
         /// <param name="options"></param>
         public AdministrativeDivisionFindMiddleware(
             AdministrativeDivisionCnService service,
-            IOptions<AdministrativeDivisionModuleOptions> options)
+            AdministrativeDivisionModuleOptions options)
         {
             this.service = service ?? throw new ArgumentNullException(nameof(service));
-            this.options = options.Value;
+            this.options = options;
         }
 
         /// <summary>

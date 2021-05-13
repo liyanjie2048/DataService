@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Liyanjie.DataServices
+namespace Liyanjie.DataService
 {
     /// <summary>
     /// 

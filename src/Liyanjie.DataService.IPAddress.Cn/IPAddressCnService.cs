@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Liyanjie.DataServices
+namespace Liyanjie.DataService
 {
     /// <summary>
     /// 

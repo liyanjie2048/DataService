@@ -1,28 +1,33 @@
-﻿namespace Liyanjie.DataServices
+﻿namespace Liyanjie.DataService
 {
     /// <summary>
     /// 
     /// </summary>
-    public class CellnumberAttributionCn
+    public class IPAddressCn
     {
         /// <summary>
         /// 
         /// </summary>
-        public string Number { get; set; }
-
+        public long Start { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public long End { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Country { get; set; }
         /// <summary>
         /// 
         /// </summary>
         public string Province { get; set; }
-
         /// <summary>
         /// 
         /// </summary>
         public string City { get; set; }
-
         /// <summary>
         /// 
         /// </summary>
-        public string Operator { get; set; }
+        public string Address { get; set; }
     }
 }
