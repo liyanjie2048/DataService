@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net45;netstandard2.1;</TargetFrameworks>
+        <TargetFrameworks>net452;netstandard2.1;</TargetFrameworks>
         <Description>数据服务（手机号码归属地）</Description>
         <Copyright>© Liyanjie.net</Copyright>
         <Authors>liyanjie8712@outlook.com</Authors>

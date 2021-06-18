@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-      <TargetFrameworks>net45;</TargetFrameworks>
-      <Description>Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn</Description>
-      <Copyright>© Liyanjie.net</Copyright>
-      <Authors>liyanjie8712@outlook.com</Authors>
-      <Company>Liyanjie.net</Company>
-      <RepositoryUrl>https://github.com/liyanjie8712/DataService</RepositoryUrl>
-      <PackageProjectUrl>https://github.com/liyanjie8712/DataService</PackageProjectUrl>
-      <RepositoryType>Git</RepositoryType>
-      <RootNamespace>Liyanjie.Modularization.AspNet</RootNamespace>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net452;</TargetFrameworks>
+        <Description>Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn</Description>
+        <Copyright>© Liyanjie.net</Copyright>
+        <Authors>liyanjie8712@outlook.com</Authors>
+        <Company>Liyanjie.net</Company>
+        <RepositoryUrl>https://github.com/liyanjie8712/DataService</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/liyanjie8712/DataService</PackageProjectUrl>
+        <RepositoryType>Git</RepositoryType>
+        <RootNamespace>Liyanjie.Modularization.AspNet</RootNamespace>
+    </PropertyGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Liyanjie.DataService.CellnumberAttribution.Cn\Liyanjie.DataService.CellnumberAttribution.Cn.csproj" />
