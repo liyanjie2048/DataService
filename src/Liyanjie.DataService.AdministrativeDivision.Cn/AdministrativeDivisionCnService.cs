@@ -85,7 +85,7 @@ namespace Liyanjie.DataService
         /// <returns></returns>
         public IEnumerable<AdministrativeDivisionCn> GetChildren(long code, Level level)
         {
-            return GetChildren(dataSet, code, level);
+            return GetChildren(dataSet, code, level).OrderBy(_ => _.Display);
         }
 
         /// <summary>

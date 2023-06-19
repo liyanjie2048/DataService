@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29411.108
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B69FF1DD-3539-40A1-B511-4AC859DBB45F}"
 EndProject
@@ -19,15 +19,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.Asp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.DataService.IPAddress.Cn", "src\Liyanjie.DataService.IPAddress.Cn\Liyanjie.DataService.IPAddress.Cn.csproj", "{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn", "src\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn\Liyanjie.Modularization.AspNet.AdministrativeDivision.Cn.csproj", "{51871D80-9578-4C14-AB20-138F8CBFA196}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn", "src\Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn\Liyanjie.Modularization.AspNet.CellnumberAttribution.Cn.csproj", "{426C36F2-DFEB-42C8-A569-2565E3C1373C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Modularization.AspNet.IPAddress.Cn", "src\Liyanjie.Modularization.AspNet.IPAddress.Cn\Liyanjie.Modularization.AspNet.IPAddress.Cn.csproj", "{D70355E8-021F-4F3B-9256-A512E870F4F1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78015A44-AED5-4C09-9BE5-2B7CE568912E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{C94F51D5-5B65-410E-8206-23C69ECDDEE6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AC8F022-6B28-46D3-AF25-6351732708DB}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,22 +56,6 @@ Global
 		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51871D80-9578-4C14-AB20-138F8CBFA196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51871D80-9578-4C14-AB20-138F8CBFA196}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51871D80-9578-4C14-AB20-138F8CBFA196}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51871D80-9578-4C14-AB20-138F8CBFA196}.Release|Any CPU.Build.0 = Release|Any CPU
-		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{426C36F2-DFEB-42C8-A569-2565E3C1373C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D70355E8-021F-4F3B-9256-A512E870F4F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C94F51D5-5B65-410E-8206-23C69ECDDEE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,10 +67,6 @@ Global
 		{68620832-2781-49A5-9E65-8406AA2BB9BF} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{939ED3B7-CBEE-4534-A9D2-B2CBD8659674} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
 		{A6F396D5-25CF-4DCD-8798-3BB970BF70EC} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
-		{51871D80-9578-4C14-AB20-138F8CBFA196} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
-		{426C36F2-DFEB-42C8-A569-2565E3C1373C} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
-		{D70355E8-021F-4F3B-9256-A512E870F4F1} = {B69FF1DD-3539-40A1-B511-4AC859DBB45F}
-		{C94F51D5-5B65-410E-8206-23C69ECDDEE6} = {78015A44-AED5-4C09-9BE5-2B7CE568912E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5F10E2C-FC0C-42E3-A0CF-A4EBD33F4642}
